@@ -14,5 +14,9 @@ public class HomeCanvas : UICanvas
         UIManager.Instance.CloseUI<HomeCanvas>(0.3f);
         SoundManager.Instance.PlayVFXSound(4);
     }
+    public void qit(){
+     UIManager.Instance.QuitGame();
+     SoundManager.Instance.PlayVFXSound(4);
+   }
 
 }

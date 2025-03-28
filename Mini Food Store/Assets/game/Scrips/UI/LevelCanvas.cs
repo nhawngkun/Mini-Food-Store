@@ -402,26 +402,31 @@ public void ResetAllLevels()
         {
             loadingScreen.SetActive(true);
         }
+        UIManager.Instance.CloseUI<MoneymenuUI>(0f);
+       
 
         yield return new WaitForSeconds(loadDelay);
-        
+      
+         
         // 4. Load new scene asynchronously
         SceneManager.LoadScene(levels[levelIndex].sceneName);
-        UIManager.Instance.OpenUI<MoneyUI>();
-        UIManager.Instance.OpenUI<TimeUI>();
-        UIManager.Instance.OpenUI<GamePlayCanvas>();
-        UIManager.Instance.CloseUI<MoneymenuUI>(0f);
+        
 
         // Đợi vài khung hình để đảm bảo scene mới đã được khởi tạo hoàn toàn
         yield return null; // Đợi một khung hình
         yield return null; // Đợi thêm một khung hình
 
         // Đóng tất cả UI hiện tại
-        UIManager.Instance.CloseUIDirectly<LevelCanvas>();
+        
         UIManager.Instance.OpenUI<GamePlayCanvas>();
+        UIManager.Instance.OpenUI<MoneyUI>();
+        UIManager.Instance.OpenUI<TimeUI>();
+        UIManager.Instance.OpenUI<GamePlayCanvas>();
+         
 
         // Thiết lập UI cho gameplay
         SetupGameplayUI();
+        UIManager.Instance.CloseUIDirectly<LevelCanvas>();
     }
 
     private void SetupGameplayUI()

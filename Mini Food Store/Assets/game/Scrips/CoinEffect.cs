@@ -48,6 +48,7 @@ public class CoinEffect : MonoBehaviour
     public void PlayCoinEffect(Vector3 startPosition, float amount, System.Action onComplete = null)
     {
         StartCoroutine(SpawnCoins(startPosition, amount, onComplete));
+        
     }
     
     private IEnumerator SpawnCoins(Vector3 startPosition, float amount, System.Action onComplete)
