@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Trash
+  - PlaceFood
+  - steak
+  - vobarger
+  - cheese
+  - oder
+  - waitoder
+  - chesburger
+  - steburger
+  - burger
+  - chesteak
+  - com
+  - rongbien
+  - dau
+  - socola
+  - cake
+  - comrb
+  - cakedau
+  - FishSteak
+  - eggsborwn
+  - ChikenLeg
+  - bep
+  - thot
+  - salmon
+  - eggfried
+  - botmi
+  - mi
+  - thitmi
+  - thitegg
+  - miegg
+  - banhsocola
+  - ramen
+  - sot
+  - cari
+  - comga
+  - comsot
+  - gasot
+  - banhmi
+  - xx
+  - banhmixx
+  - banhsxx
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: quay
+    uniqueID: 29280549
+    locked: 0
+  - name: khay
+    uniqueID: 2584233711
+    locked: 0
+  - name: dia
+    uniqueID: 2547911195
+    locked: 0
+  - name: food
+    uniqueID: 2422259773
+    locked: 0
+  - name: end
+    uniqueID: 1912404243
+    locked: 0
