@@ -38,6 +38,7 @@ public class CDUI : UICanvas
      
    }
     public void playagian(){
+         UIManager.Instance.ResumeGame();
      if (MoneyManager.Instance != null)
         {
             MoneyManager.Instance.ResetGameMoney();

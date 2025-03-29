@@ -56,7 +56,7 @@ public class GamePlayCanvas : UICanvas
    public void caidat(){
     UIManager.Instance.OpenUI<CDUI>();
     UIManager.Instance.PauseGame();
-        SoundManager.Instance.PlayVFXSound(4);
+     SoundManager.Instance.PlayVFXSound(4);
 
    }
    public void hd(){
