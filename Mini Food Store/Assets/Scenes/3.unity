@@ -4364,7 +4364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textTime: {fileID: 927270104}
-  countdownTime: 5
+  sceneTimeMappings: []
 --- !u!114 &927270104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7991,7 +7991,7 @@ MonoBehaviour:
   - {fileID: 3699538424024113203, guid: 17555ae79d725ab489a4810681c3ab84, type: 3}
   - {fileID: 3699538424024113203, guid: cac396b81903411459b41d5d007f2c61, type: 3}
   minSpawnTime: 20
-  maxSpawnTime: 30
+  maxSpawnTime: 21
   minCustomersPerSpawn: 2
   maxCustomersPerSpawn: 4
   spawnAreaMinX: -4

@@ -2634,7 +2634,7 @@ MonoBehaviour:
   - {fileID: 4063984127362785485, guid: 882938224400b0c4ba4f94a526ab616a, type: 3}
   - {fileID: 1997076949937196789, guid: 3485b594ea7f21341adee4a2a681e1e1, type: 3}
   minSpawnTime: 20
-  maxSpawnTime: 30
+  maxSpawnTime: 25
   minCustomersPerSpawn: 2
   maxCustomersPerSpawn: 4
   spawnAreaMinX: -4

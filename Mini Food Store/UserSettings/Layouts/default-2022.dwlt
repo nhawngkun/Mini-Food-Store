@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 154
+  controlID: 75
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -763,9 +763,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.34114546, y: -0.6033592, z: 8.06101}
+    m_Target: {x: 2.3702023, y: 0.54105717, z: 8.098674}
     speed: 2
-    m_Value: {x: 0.34114546, y: -0.6033592, z: 8.06101}
+    m_Value: {x: 2.3702023, y: 0.54105717, z: 8.098674}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -815,9 +815,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.342775
+    m_Target: 6.576811
     speed: 2
-    m_Value: 10.342775
+    m_Value: 6.576811
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1033,7 +1033,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 76962
+  m_LastSelectedObjectID: 25070
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1073,21 +1073,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 86e6ffffcee6ffff38e9ffff0ceaffffdaeaffff1aebffff92efffff96f0ffffc0f1fffff0f2fffff4f3ffff56f5ffff1afbffff
+      m_ExpandedIDs: 26acffff74acffffe2aeffffbaafffff8eb0ffffd8b0ffffceb8ffff1eb9ffff8cbbffff64bcffff38bdffff82bdffff1afbffffee6100002a6200004a620000546200008e6200002c8d0000d68d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: gameplay
+        m_OriginalName: gameplay
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 25130
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -1142,7 +1142,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/game/Asset/BTN
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1150,16 +1150,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/game/Asset/BTN
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\game unity\Mini-Food-Store\Mini Food Store
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 70640000
-    m_LastClickedID: 25712
-    m_ExpandedIDs: 00000000286400002a6400002c6400002e64000030640000326400003464000036640000386400003a6400003c6400003e6400004064000000ca9a3b
+    m_SelectedIDs: 96640000
+    m_LastClickedID: 25750
+    m_ExpandedIDs: 00000000286400002a6400002c6400002e64000030640000326400003464000036640000386400003a6400003c6400003e64000040640000566400009664000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1215,7 +1215,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: bc750000f87800007e7900000c710000dc70000084700000887300002c8100008e7e00006a7d0000127d0000ba6b0000c2610000a8610000cc6100003c670000466300001069000038650000687400006474000090630000c0660000b883000060670000a47800009a670000fa9d00009e6700007c6200005a620000bc63000022770000b87800006065000026630000242600001c260000202600003026000040260000d6a50000f86c00003e7c0000826400007c6300000000000056630000
+    m_ExpandedInstanceIDs: bc750000f87800007e7900000c710000dc70000084700000887300002c8100008e7e00006a7d0000127d0000ba6b0000c2610000a8610000cc6100003c670000466300001069000038650000687400006474000090630000c0660000b883000060670000a47800009a670000fa9d00009e6700007c6200005a620000bc63000022770000b87800006065000026630000242600001c260000202600003026000040260000d6a50000f86c00003e7c0000826400007c630000000000005663000084630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1239,7 +1239,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 866.2}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 140.4
