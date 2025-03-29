@@ -537,8 +537,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3354363b3f6baeb4ab655b719f45488d, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 818ea85fc7e5bd14e918a1456ae63963, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1804,7 +1804,7 @@ MonoBehaviour:
   - levelName: 
     sceneName: 2
     levelButton: {fileID: 5522323739714699692, guid: e57fcb81ea1cf3e4ba9c8af2e1203c42, type: 3}
-    isUnlocked: 0
+    isUnlocked: 1
     price: 1000
     unlockedSprite: {fileID: 21300000, guid: e14d4c323f71f9949865da5eb0d9cae5, type: 3}
     lockedSprite: {fileID: 21300000, guid: e14d4c323f71f9949865da5eb0d9cae5, type: 3}
@@ -1975,7 +1975,7 @@ MonoBehaviour:
   - sceneName: 1
     countdownTime: 180
   - sceneName: 2
-    countdownTime: 150
+    countdownTime: 160
   - sceneName: 3
     countdownTime: 120
 --- !u!1 &1099408245
