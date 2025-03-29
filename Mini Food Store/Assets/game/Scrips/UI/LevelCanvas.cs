@@ -410,6 +410,9 @@ public void ResetAllLevels()
          
         // 4. Load new scene asynchronously
         SceneManager.LoadScene(levels[levelIndex].sceneName);
+        UIManager.Instance.OpenUI<GamePlayCanvas>();
+        UIManager.Instance.OpenUI<MoneyUI>();
+        UIManager.Instance.OpenUI<TimeUI>();
         
 
         // Đợi vài khung hình để đảm bảo scene mới đã được khởi tạo hoàn toàn
@@ -418,9 +421,7 @@ public void ResetAllLevels()
 
         // Đóng tất cả UI hiện tại
         
-        UIManager.Instance.OpenUI<GamePlayCanvas>();
-        UIManager.Instance.OpenUI<MoneyUI>();
-        UIManager.Instance.OpenUI<TimeUI>();
+        
         UIManager.Instance.OpenUI<GamePlayCanvas>();
          
 
