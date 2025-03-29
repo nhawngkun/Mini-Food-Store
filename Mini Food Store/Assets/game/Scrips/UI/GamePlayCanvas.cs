@@ -70,8 +70,17 @@ public class GamePlayCanvas : UICanvas
       
    }
 
+   // Thêm hàm mới để điều khiển âm thanh bật/tắt
+   public void ToggleSound()
+   {
+      // Đảo ngược trạng thái TurnOn của SoundManager
+      SoundManager.Instance.TurnOn = !SoundManager.Instance.TurnOn;
+      
+      // Phát âm thanh khi nhấn nút (chỉ phát nếu âm thanh đang bật)
+      if (SoundManager.Instance.TurnOn)
+      {
+          SoundManager.Instance.PlayVFXSound(4);
+      }
+   }
    
-   
-
-
 }
