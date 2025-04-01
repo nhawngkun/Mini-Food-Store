@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5220435775538836541}
   - component: {fileID: 8088301473248075575}
   - component: {fileID: 5233821460058868630}
+  - component: {fileID: 2392847805597013715}
   m_Layer: 5
   m_Name: Button (Legacy) 1
   m_TagString: Untagged
@@ -120,3 +121,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2392847805597013715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2784007868594968385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25738bb863255b042bd23f49cb8d7cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverColor: {r: 0.8490566, g: 0.19063714, b: 0.22941484, a: 1}
+  clickScaleFactor: 0.9
+  scaleFactor: 1.1
+  duration: 0.2

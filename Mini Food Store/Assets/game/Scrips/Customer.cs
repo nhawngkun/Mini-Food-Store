@@ -137,6 +137,18 @@ public class Customer : MonoBehaviour
 
             selectedEmotion.image.enabled = true;
 
+            // Phát âm thanh dựa trên trạng thái cảm xúc
+            if (isHappy)
+            {
+                // Phát âm thanh khi khách hàng vui vẻ
+                SoundManager.Instance.PlayVFXSound(1);
+            }
+            else
+            {
+                // Phát âm thanh khi khách hàng không vui
+                SoundManager.Instance.PlayVFXSound(0);
+            }
+
             currentEmotionCoroutine = StartCoroutine(HideEmotionAfterDelay(selectedEmotion, emotionDisplayTime));
         }
     }
@@ -604,6 +616,9 @@ private void DeductMoneyForTimeout()
 
                 Destroy(foodObject);
 
+                // Phát âm thanh vui vẻ khi khớp đồ ăn
+                SoundManager.Instance.PlayVFXSound(1);
+
                 CheckAllMatched();
 
                 break;
@@ -678,26 +693,31 @@ private void DeductMoneyForTimeout()
     }
 }
 
-void PlayCoinEffect(float amount)
-{
-    if (CoinEffect.Instance != null)
+    void PlayCoinEffect(float amount)
     {
-        // Gọi hiệu ứng coins bay và đợi hoàn thành rồi mới tính tiền
-        CoinEffect.Instance.PlayCoinEffect(transform.position, amount, () => {
-            // Callback này sẽ được gọi khi hiệu ứng hoàn tất
-            // Lúc này mới thêm tiền vào tổng, use the amount directly
+        if (CoinEffect.Instance != null)
+        {
+            // Phát âm thanh khi khách trả tiền
+            SoundManager.Instance.PlayVFXSound(5);
+
+            // Gọi hiệu ứng coins bay và đợi hoàn thành rồi mới tính tiền
+            CoinEffect.Instance.PlayCoinEffect(transform.position, amount, () => {
+                // Callback này sẽ được gọi khi hiệu ứng hoàn tất
+                // Lúc này mới thêm tiền vào tổng, use the amount directly
+                CalculateMoney(amount / 10); // Convert back to time value
+            });
+        }
+        else
+        {
+            // Nếu không tìm thấy CoinEffect thì tính tiền ngay
+            // Vẫn phát âm thanh khi trả tiền
+            SoundManager.Instance.PlayVFXSound(5);
             CalculateMoney(amount / 10); // Convert back to time value
-        });
+        }
     }
-    else
-    {
-        // Nếu không tìm thấy CoinEffect thì tính tiền ngay
-        CalculateMoney(amount / 10); // Convert back to time value
-    }
-}
 
     // Cập nhật phương thức tính tiền để tích lũy tổng tiền
- void CalculateMoney(float remainingTime)
+    void CalculateMoney(float remainingTime)
 {
     Debug.Log(remainingTime);
     // Tính tiền cho khách hàng hiện tại
